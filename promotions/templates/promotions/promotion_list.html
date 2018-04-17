@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Promociones</title>
+</head>
+<body>
+	<ul>
+		{% for promo in promos %}
+			<li>
+				{{promo.name}} - {{promo.final_price}}
+			</li>
+		{% endfor %}
+	</ul>
+</body>
+</html>

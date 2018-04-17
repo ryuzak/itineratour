@@ -1,0 +1,6 @@
+<form method="post" action="" enctype="multipart/form-data">
+	{% csrf_token %}
+	{{form.as_ul}}
+	<button type="submit">Guardar</button>
+	<a class="btn" href="{% url 'promotions:promotion_list' %}">Cancelar</a>
+</form>
