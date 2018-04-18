@@ -23,4 +23,4 @@ urlpatterns = [
     #url(r'^admin/', admin.site.urls),
     url(r'^products/',include('turistic_products.urls', namespace='turistic_products')),
     url(r'^promotions/',include('promotions.urls', namespace='promotions')),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
