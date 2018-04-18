@@ -1,0 +1,127 @@
+
+
+<!-- <li class="heading">
+    <h3 class="uppercase">Menú</h3>
+</li> -->
+<li class="nav-item {% if 'field' in request.path and '/field/activity/' not in request.path and '/field/detection/' not in request.path  %} active {% endif%} ">
+    <a href="{% url 'cust_field:field_list' %}"> 
+        <i class="icon-pointer"></i>
+        <span class="title">Parcelas</span>
+    </a>
+</li>
+{% comment %}
+    <li class="nav-item {% if '/field/activity/' in request.path %} active {% endif%} ">
+        <!-- Avtividades -->
+        <a href="{% url 'cust_doneactivities:doneactivity_list' %}"> 
+            <i class="icon-list"></i>
+            <span class="title">Actividades</span>
+        </a>
+    </li>
+{% endcomment %}
+<!-- sub menu para detecciones -->
+<li class="nav-item {% if '/field/detection/' in request.path %} active {% endif%} ">
+    <a href="{% url 'cust_detectionsactivity:general_list' %}"> 
+        <i class="icon-magnifier"></i>
+        <span class="title">Detecciones</span>
+    </a>
+</li>
+<li class="nav-item {% if '/calendar/' in request.path %} active {% endif%} ">
+    <a href="{% url 'cust_calendar:custcalendar' %}"> 
+        <i class="fa fa-calendar"></i>
+        <span class="title">Calendario</span>
+    </a>
+</li>
+<li class="nav-item {% if '/climate/eightdays/' in request.path %} active {% endif%} ">
+    <a href="{% url 'cust_climate:eight_days' %}"> 
+        <i class="fa fa-cloud"></i>
+        <span class="title">Clima 8 dias</span>
+    </a>
+</li>
+
+{% comment %}
+<!-- sub menu para climas 
+<li class="nav-item {% if '/climate/' in request.path %} active open {% endif %} ">
+    <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="fa fa-cloud"></i>
+        <span class="title">Clima</span>
+        <span class="arrow"></span>
+    </a>
+    <ul class="sub-menu">
+
+        <li class="nav-item {% if '/48/' in request.path %} active {% endif%} ">
+            <a href="{% url 'cust_climate:two_days' %}"> Clima 48 horas </a>
+        </li>
+
+        <li class="nav-item {% if '/eightdays/' in request.path %} active {% endif%}">
+            <a href="{% url 'cust_climate:eight_days'%}"> Clima 8 dias </a>
+        </li>
+    </ul>
+</li>
+-->
+{% endcomment %}
+
+
+<li class="nav-item {% if '/accounts/' in request.path %} active open {% endif %} ">
+    <a href="javascript:;" class="nav-link nav-toggle">
+        <i class="icon-folder-alt"></i>
+        <span class="title">Catálogos</span>
+        <span class="arrow"></span>
+    </a>
+    <ul class="sub-menu">
+        
+        <li class="nav-item {% if '/accounts/' in request.path %} active {% endif%} ">
+            <a href="{% url 'accounts:users_list' %}">  Usuarios del sistema </a>
+        </li>
+        
+        <li class="nav-item {% if '/cycles/' in request.path %} active {% endif%} ">
+            <a href="{% url 'cust_cycles:custcycles_list' %}">  Ciclos agricolas </a>
+        </li>
+        
+    </ul>
+</li>
+
+<li class="nav-item {% if '/markets/' in request.path %} active open {% endif %}">
+    <a href="javascript:;" class="nav-link nav-toggle"> 
+        <i class="fa fa-cart-plus"></i>
+        <span class="title">Mercados</span>
+        <span class="arrow"></span>
+    </a>
+    <ul class="sub-menu">
+        <li class="nav-item {% if '/products/' in request.path %} active {% endif%} ">
+            <a href="{% url 'cust_markets:products' %}"> Precio de Productos </a>
+        </li>
+
+        <li class="nav-item {% if '/surface/' in request.path %} active {% endif%}">
+            <a href="{% url 'cust_surfacesown:surface' %}"> Superficie Sembrada </a>
+        </li>     
+    </ul>
+</li>
+{% comment %}
+<!-- {% if customer.profile.name == 'customer_full' or customer.profile.name == 'customer_drone' %}
+<li class="nav-item {% ifequal request.path '/drone/files/list/' %} active {% endifequal %}">
+    <a href="{% url 'cust_drone:drone_file_request' %}"> 
+        <i class="fa icon-plane"></i>
+        <span class="title">Drones</span>
+    </a>
+</li>
+{% endif %} -->
+{% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
