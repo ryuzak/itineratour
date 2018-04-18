@@ -1,0 +1,31 @@
+*{
+    transition: all .3s ease;    
+    
+}
+.logo-default{
+    max-height: 60px;
+    margin-top: 5px !important;
+}
+.page-header.navbar {
+    height: 70px;
+}
+.page-header.navbar .menu-toggler.sidebar-toggler {
+    margin: 23px 0 0;
+}
+@media (min-width: 992px){
+    .page-content-wrapper .page-content {
+        min-height: 721px !important;
+    }
+}
+.navbar{
+    background-color: #f8f9fa!important
+}
+.page-header-fixed .page-container {
+    background-color: #182039;
+}
+.page-footer{
+    background-color: rgb(52, 178, 152);
+}
+.page-footer .text-center{
+    color: #fff;
+}
