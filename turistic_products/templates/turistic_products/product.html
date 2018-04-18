@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="" method="post" enctype="multipart/form-data">
+	{% csrf_token %}
+	{{form.as_ul}}
+	<button type="submit">Guardar</button>
+	<a class="btn" href="{% url 'promotions:promotion_list' %}">Cancelar</a>
+	
+</form>
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
