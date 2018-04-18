@@ -8,3 +8,9 @@ from base.models import BaseModel
 class Category(BaseModel):
 	name = models.CharField(max_length=50)
 	description = models.CharField(max_length=512)
+
+	def __str__(self):
+		return self.name
+
+	def __unicode__(self):
+		return self.name

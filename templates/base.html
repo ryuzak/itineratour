@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 {% load staticfiles %}
-{% load thumbnail %}
 
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -148,9 +147,7 @@
                                     <span class="username username-hide-on-mobile"> {{ user.first_name }} </span>
                                     <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                                     <!-- thumbail profile -->
-                                    {% thumbnail user.picture "29x29" crop="center" as img %}
-                                        <img class="img-circle" src="{{img.url}}" width="29px" height="29px"/> </a>
-                                    {% endthumbnail %}
+                                    
                                     <ul class="dropdown-menu dropdown-menu-default">
                                       <li>
                                         <a href="{% url 'accounts:users_edit' user.pk %}">
@@ -284,10 +281,6 @@
         <!-- BEGIN DOCUMENT READY CUSTOM FUNCTIONS -->
         <script type="text/javascript">
             $(document).ready(function(){ 
-                {% include "validations_errors.html" %}
-                
-                {% block document_ready %}
-                {% endblock %}
             });
         </script>
         <!-- END DOCUMENT READY CUSTOM FUNCTION -->
