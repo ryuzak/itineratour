@@ -19,7 +19,7 @@ class PromotionForm(ModelForm):
 	)
 
 	description = forms.CharField(
-		label = 'descripcion',
+		label = 'Descripcion',
 		min_length = '2',
 		widget = forms.TextInput(
 			attrs = {

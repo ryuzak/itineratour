@@ -37,9 +37,11 @@
         <link href="{% static 'assets/layouts/layout/css/layout.min.css' %}" rel="stylesheet" type="text/css" />
         <link href="{% static 'assets/layouts/layout/css/themes/light2.min.css' %}" rel="stylesheet" type="text/css" id="style_color" />
         <link href="{% static 'assets/layouts/layout/css/custom.min.css' %}" rel="stylesheet" type="text/css" />
+
+        <link href="{% static 'assets/global/css/styles.css'%}" rel="stylesheet">
         
         <!-- END THEME LAYOUT STYLES -->
-        <link rel="shortcut icon" href="/static/assets/global/img/favicon.ico" /> </head>
+        <link rel="icon" type="image/png" href="/static/assets/global/img/favicon.png" /> </head>
     <!-- END HEAD -->
 
     <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
@@ -50,7 +52,7 @@
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
                     <a href="/">
-                        <img src="{% static 'assets/layouts/layout4/img/logo-light.png' %}" alt="logo" class="logo-default" /> </a>
+                        <img src="{% static 'assets/global/img/Itineratur.png' %}" alt="logo" class="logo-default" /> </a>
                     <div class="menu-toggler sidebar-toggler">
                         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
                     </div>
@@ -147,7 +149,7 @@
                                     <span class="username username-hide-on-mobile"> {{ user.first_name }} </span>
                                     <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
                                     <!-- thumbail profile -->
-                                    
+
                                     <ul class="dropdown-menu dropdown-menu-default">
                                       <li>
                                         <a href="{% url 'accounts:users_edit' user.pk %}">
@@ -228,8 +230,7 @@
             <div class="page-footer-inner"> {{proyect_name}}
             </div>
             <div class="text-center">
-                derechos reservados captum 2017©<br>
-                Ayuda y soporte comunicarse a <a href="mailto:soporte@luxelare.com?cc=webmaster@luxelare.com">soporte@luxelare.com</a><br>
+                Derechos Reservados Itinerantur 2018©
             </div>
             <div class="scroll-to-top">
                 <i class="icon-arrow-up"></i>
@@ -280,8 +281,7 @@
         
         <!-- BEGIN DOCUMENT READY CUSTOM FUNCTIONS -->
         <script type="text/javascript">
-            $(document).ready(function(){ 
-            });
+
         </script>
         <!-- END DOCUMENT READY CUSTOM FUNCTION -->
     </body>
