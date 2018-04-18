@@ -1,0 +1,9 @@
+<color name="colorPrimario">#03A9F4</color>
+
+<color name="colorSecundario">#bdc3c7</color>
+
+<color name="colorAcento">#182039</color>
+
+<color name="colorTextoAcento">#34B298</color>
+
+<color name="colorGris">#6B6B6A</color>

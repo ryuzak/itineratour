@@ -1,0 +1,273 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Itinerantur</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'vendor/custom/font-awesome/css/font-awesome.css' %}">
+    
+    <link rel="stylesheet" href="{% static 'vendor/custom/css/index.css' %}">
+
+    <link href="{% static 'vendor/custom/css/styles.css' %}" rel="stylesheet">
+    
+  </head>
+
+  <body>
+      
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="{% static 'vendor/custom/img/Itineratur.png' %}"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#app">Aplicación móvil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+      
+  <section class="fullsize-video-bg" id="inicio">
+	<div class="inner">
+            <div class="content">
+                <div class="row">
+                <div class="d-flex flex-column justify-content-center">
+                <h1 class="text-uppercase robotoSlab font-weight-bold text-white">Itinerantur</h1>
+                <h5 class="text-justify font-weight-normal text-white">En latín significa viajar, en tu idioma experiencias inolvidables. Es una aplicación móvil que sirve como guía turista por medio de una interfaz intuitiva, adaptable, integra y en distintos idiomas que ayuda a los turistas a llegar a los lugares que siempre quiso visitar, sin pasar por el singular </h5><h3>“¿A dónde quieres ir?”</h3>
+            </div>
+                    </div>
+        </div>
+	</div>
+	<div id="video-viewport">
+		<video autoplay muted loop>
+			<source src="{% static 'vendor/custom/video/Sea.mp4'%}" type="video/mp4" />
+		</video>
+	</div>
+</section>
+          
+    
+    <section class="triangle" id="app">
+       <div class="before"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-sm-6 d-flex flex-column justify-content-center">
+                    <h2 class="robotoSlab font-weight-bold text-white">Mi casa, su casa</h2>
+                    <p class="text-white"><strong>Intineratur</strong> no te lleva a comer, te lleva a disfrutar tus antojos.
+<br><strong>Itineratur</strong> no te lleva por un café, te lleva a una plática amena.
+<br><strong>Itineratur</strong> no te lleva a explorar la ciudad, te lleva a revivir el pasado.
+<br><strong>Itineratur</strong> no es una aplicación más, es tu guía turista personalizada.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="{% static 'vendor/custom/img/apple-iphone6-spacegrey-portrait.png' %}" alt="Mockup" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="container position-relative categorias" id="categorias">
+            <h2 class="robotoSlab font-weight-light text-white mt-0 mb-3">Categorias</h2>
+            <div class="row">
+                <div class="col-sm d-flex justify-content-center flex-column align-items-center">
+                    <div class="img-rounded">
+                        <img src="{% static 'vendor/custom/img/diet.png' %}" class="img-fluid img-icon">
+                    </div>
+                    <h5 class="text-center">Comida</h5>
+                </div>
+                <div class="col-sm d-flex justify-content-center flex-column align-items-center">
+                    <div class="img-rounded">
+                        <img src="{% static 'vendor/custom/img/hotel.png' %}" class="img-fluid img-icon">
+                    </div>
+                    <h5 class="text-center">Hospedaje</h5>
+                </div>
+                <div class="col-sm d-flex justify-content-center flex-column align-items-center">
+                   <div class="img-rounded">
+                        <img src="{% static 'vendor/custom/img/teotihuacan.png' %}" class="img-fluid img-icon">
+                    </div>
+                    <h5 class="text-center">Lugares de Interés</h5>
+                </div>
+                <div class="col-sm d-flex justify-content-center flex-column align-items-center">
+                   <div class="img-rounded">
+                        <img src="{% static 'vendor/custom/img/concert.png' %}" class="img-fluid img-icon">
+                    </div>
+                    <h5 class="text-center">Actividades culturales</h5>
+                </div>
+                <div class="col-sm d-flex justify-content-center flex-column align-items-center">
+                   <div class="img-rounded">
+                        <img src="{% static 'vendor/custom/img/surf.png' %}" class="img-fluid img-icon">
+                    </div>
+                    <h5 class="text-center">Turismo Alternativo</h5>
+                </div>
+                <div class="col-sm d-flex justify-content-center flex-column align-items-center">
+                   <div class="img-rounded">
+                        <img src="{% static 'vendor/custom/img/beer.png' %}" class="img-fluid img-icon">
+                    </div>
+                    <h5 class="text-center">Centro Nocturno</h5>
+                </div>
+            </div>
+        </div>
+        <div class="after"></div>
+    </section>
+    
+    <section class="py-5" id="nosotros">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <figure class="snip1515">
+                        <div class="profile-image"><img src="{% static 'vendor/custom/img/eider.JPG' %}" alt="sample47" /></div>
+                        <figcaption>
+                            <h3>Eider Diaz</h3>
+                            <h4>Founder</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm">
+                    <figure class="snip1515">
+                        <div class="profile-image"><img src="{% static 'vendor/custom/img/rob.JPG' %}" alt="sample47" /></div>
+                        <figcaption>
+                            <h3>Roberto Martínez</h3>
+                            <h4>Founder</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm">
+                    <figure class="snip1515">
+                        <div class="profile-image"><img src="{% static 'vendor/custom/img/daniel.JPG' %}" alt="sample47" /></div>
+                        <figcaption>
+                            <h3>Daniel Hernández</h3>
+                            <h4>Founder</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm">
+                    <figure class="snip1515">
+                        <div class="profile-image"><img src="{% static 'vendor/custom/img/keshu.JPG' %}" alt="sample47" /></div>
+                        <figcaption>
+                            <h3>Jesús Lara</h3>
+                            <h4>Founder</h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="datos">
+        <div class="row">
+            <div class="col-sm d-flex justify-content-center align-items-center flex-column">
+                <img src="{% static 'vendor/custom/img/playa.png' %}" class="img-fluid">
+                <h1 class="font-weight-bold my-2">400</h1>
+                <h6 class="text-uppercase">Playas en México</h6>
+            </div>
+            <div class="col-sm d-flex justify-content-center align-items-center flex-column">
+                <img src="{% static 'vendor/custom/img/restaurant.png' %}" class="img-fluid">
+                <h1 class="font-weight-bold my-2">5</h1>
+                <h6 class="text-uppercase">Millones de Restaurantes</h6>
+            </div>
+            <div class="col-sm d-flex justify-content-center align-items-center flex-column">
+                <img src="{% static 'vendor/custom/img/resort.png' %}" class="img-fluid">
+                <h1 class="font-weight-bold my-2">20</h1>
+                <h6 class="text-uppercase">Mil Hoteles</h6>
+            </div>
+            <div class="col-sm d-flex justify-content-center align-items-center flex-column">
+                <img src="{% static 'vendor/custom/img/location-mark.png' %}" class="img-fluid">
+                <h1 class="font-weight-bold my-2">36</h1>
+                <h6 class="text-uppercase">Destinos turísticos</h6>
+            </div>
+        </div>
+    </section>
+
+<footer id="contacto">
+    <div class="container form">
+        <div class="row">
+            <div class="col-lg-5 d-flex align-items-center justify-content-center">
+                <img src="{% static 'vendor/custom/img/LogoItineraturBlanco.png' %}" class="img-fluid img-bottom">
+            </div>
+            <div class="col-lg-7">
+               <h2 class="section-heading font-weight-bold">Contacto</h2>
+                <h4 class="section-subheading text-left font-weight-light">¿Quejas? ¿Sugerencias? Mandanos un correo, con gusto te atendemos</h4>
+                <form name="sentMessage" id="contactForm" novalidate="">
+                    <div class="row">
+                        <div class="col-md-6 wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tu nombre o nombre de tu empresa *" id="name" required data-validation-required-message="Por favor introduce tu nombre.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Tu correo *" id="email" required data-validation-required-message="Pro favor introduce tu correo.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" class="form-control" placeholder="Tu teléfono *" id="phone" required data-validation-required-message="Por favor introduce tu número telefónico.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Tu mensaje *" id="message" required data-validation-required-message="Por favor introduce un mensaje." rows="5"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-default btn-xl sr-button">Mandar Mensaje</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="/static/vendor/jquery/jquery.min.js"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/custom/js/index.js' %}"></script>
+    <script src="{% static 'vendor/custom/js/contact_me.js' %}"></script>
+   
+    
+    <script>
+        $(".triangle .before").css({
+            "border-top": ($(window).width()/10)*6 + "px solid #34B298",
+            "border-right":$(window).width() + "px solid transparent",
+        });
+        $(".triangle .after").css({
+            "border-bottom": ($(window).width()/3)*2 + "px solid #182039",
+            "border-right":$(window).width() + "px solid transparent",
+        });
+        $(".categorias .row .col-sm").hover(function(){
+            $(".triangle").css("background-image","url(/static/vendor/custom/img/"+ ($(this).index() +1)+".jpg)");
+        });
+        
+        $(".navbar .nav-link").click(function(e) {
+            e.preventDefault();
+            var aid = $(this).attr("href");
+            $('html,body').animate({scrollTop: $(aid).offset().top - 100},'slow');
+        });
+    </script>
+          
+  </body>
+</html>
